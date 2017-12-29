@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f77ff7">
+
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:background="#73b1e7"
+    >
+
+        <com.bing.lan.measurespecdemo.WeChatLayout
+            android:id="@+id/weChatLayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:background="#75ec75"
+            android:onClick="changeSize"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <FrameLayout
+        android:onClick="toMain2Activity"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
