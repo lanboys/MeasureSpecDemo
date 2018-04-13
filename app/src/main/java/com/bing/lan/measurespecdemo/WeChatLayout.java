@@ -183,11 +183,17 @@ public class WeChatLayout extends ViewGroup {
 
         setMeasuredDimension(MeasureSpec.makeMeasureSpec(width, widthMode),
                 MeasureSpec.makeMeasureSpec(height, heightMode));
+
+        // 或者通过如下方法设置
+        //setMeasuredDimension(
+        //        resolveSizeAndState(maxWidth, widthMeasureSpec, 0),
+        //        resolveSizeAndState(maxHeight, heightMeasureSpec, 0));
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
 
+        // 尺寸 是父控件 给子控件的布局坐标，坐标值是相对父控件 不是屏幕
         Log.i(TAG, "------onLayout---------------");
         Log.i(TAG, "changed: " + changed);
         Log.i(TAG, "left: " + left);
